@@ -738,14 +738,14 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
   
 }
 
 @media screen and (min-width: 992px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
 }
 
@@ -754,10 +754,10 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
   .project-back {
-    font-size: calc(1.5vh + 1vw); 
+    font-size: 2rem; 
   }
   .project-back h1 {
-    font-size: calc(2vh + 1.5vw);
+    font-size: 2.5rem;
     margin-bottom: 10px;
   }
 }

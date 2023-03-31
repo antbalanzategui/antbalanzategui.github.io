@@ -637,7 +637,6 @@ nav li a:hover {
 
       .profile-pic, .resume-pic {
       width: 30vw;
-      min-width: 300px;
       }
 
       .resume-pic {
@@ -724,6 +723,17 @@ footer {
 }   
 
 @media screen and (max-width: 767px) {
+
+  .resume-pic, .profile-pic {
+    max-width: 350px;
+    /* I AM HERE */
+  }
+
+  .profile, .resume {
+    display: flex;
+    justify-content: center;
+  }
+  
 
 .aboutMeHeader {
   border-width: 0px;
@@ -909,7 +919,8 @@ margin-left: 25%;
   }
 
   .profile-pic, .resume-pic {
-    width: 40vw;
+    width: 30vw;
+    max-width: 700px;
   }
   .profile-pic {
     height: 60vh;

@@ -901,6 +901,12 @@ margin-left: 25%;
 }
 
 @media screen and (min-width: 1200px) {
+
+  .resume {
+    margin-right: 30px;
+  }
+
+
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
   }

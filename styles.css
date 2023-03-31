@@ -638,7 +638,6 @@ nav li a:hover {
 
       .profile-pic, .resume-pic {
       width: 30vw;
-      max-width: 400px;
       min-width: 300px;
       }
 
@@ -674,7 +673,6 @@ nav li a:hover {
 
       .profile-pic, .resume-pic {
           width: 30vw;
-          max-width: 300px;
       }
 
       .header {
@@ -912,7 +910,7 @@ margin-left: 25%;
   }
 
   .profile-pic, .resume-pic {
-    width: 65vw;
+    width: 100vw;
   }
   .profile-pic {
     height: 60vh;

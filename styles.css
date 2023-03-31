@@ -198,7 +198,7 @@
   .project {
     position: relative;
     width: 90%;
-    height: 50vh;
+    height: 70vh;
     margin: 20px;
     margin-left: 5%;
     perspective: 1000px;
@@ -696,7 +696,10 @@ footer {
     border-width: 0px;
   }
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .project {
+    height: 400px;
   }
   .project-back {
     font-size: 1rem;
@@ -738,14 +741,20 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .project {
+    height: 400px;
   }
   
 }
 
 @media screen and (min-width: 992px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .project {
+    height: 400px;
   }
 }
 

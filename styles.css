@@ -521,7 +521,6 @@ a:hover {
 
 .profile, .resume {
   width: 100%;
-  max-width: 400px;
   margin-bottom: 2rem;
 }
 
@@ -910,7 +909,7 @@ margin-left: 25%;
   }
 
   .profile-pic, .resume-pic {
-    width: 100vw;
+    width: 40vw;
   }
   .profile-pic {
     height: 60vh;

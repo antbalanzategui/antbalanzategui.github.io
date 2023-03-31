@@ -125,7 +125,7 @@
     display: inline-block;
     margin-top: 12px;
   }
-  .right-side .button input[type="button"]{
+  .right-side .button input[type="submit"]{
     color: #fafafa;
     font-size: 18px;
     outline: none;
@@ -137,14 +137,14 @@
     transition: all 0.3s ease;
   }
 
-  .dark-mode .button input[type="button"] {
+  .dark-mode .button input[type="submit"] {
     background: #ffdef2;
   }
-  .button input[type="button"]:hover{
+  .button input[type="submit"]:hover{
     background: #5B59EE;
   }
 
-  .dark-mode .button input[type="button"]:hover {
+  .dark-mode .button input[type="submit"]:hover {
     background: #FFBFE6;
   }
   
@@ -198,7 +198,7 @@
   .project {
     position: relative;
     width: 90%;
-    height: 400px;
+    height: 50vh;
     margin: 20px;
     margin-left: 5%;
     perspective: 1000px;
@@ -699,10 +699,10 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .project-back {
-    font-size: calc(1.5vh + 1.5vw);
+    font-size: 1rem;
   }
   .project-back h1 {
-    font-size: calc(2vh + 1.5vw);
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   .profile-pic {
@@ -751,7 +751,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
   .project-back {
     font-size: calc(1.5vh + 1vw); 

@@ -124,7 +124,7 @@
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"]{
+.right-side .button input[type="submit"]{
   color: #fafafa;
   font-size: 18px;
   outline: none;
@@ -136,14 +136,14 @@
   transition: all 0.3s ease;
 }
 
-.dark-mode .button input[type="button"] {
+.dark-mode .button input[type="submit"] {
   background: #ffdef2;
 }
-.button input[type="button"]:hover{
+.button input[type="submit"]:hover{
   background: #5B59EE;
 }
 
-.dark-mode .button input[type="button"]:hover {
+.dark-mode .button input[type="submit"]:hover {
   background: #FFBFE6;
 }
 

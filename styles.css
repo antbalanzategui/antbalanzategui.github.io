@@ -673,8 +673,8 @@ nav li a:hover {
       }
 
       .profile-pic, .resume-pic {
-          width: 60vw;
-          max-width: 350px;
+          width: 30vw;
+          max-width: 300px;
       }
 
       .header {
@@ -854,7 +854,6 @@ padding: 0;
 .right-side .button {
 margin-left: 25%;
 }
-
 }
 }
 
@@ -910,5 +909,15 @@ margin-left: 25%;
   .project-back h1 {
     font-size: calc(2vh + 1.5vw);
     margin-bottom: 10px;
+  }
+
+  .profile-pic, .resume-pic {
+    width: 45vw;
+  }
+  .profile-pic {
+    height: 60vh;
+  }
+  .resume-pic {
+    height: 80vh;
   }
 }

@@ -23,7 +23,40 @@
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 0 15px 	#7877e6;
+  overflow: auto;
 }
+
+.container-holder .contact-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container-holder .contact-container::-webkit-scrollbar-track {
+  background-color: #484b6a;
+}
+
+.container-holder .contact-container::-webkit-scrollbar-thumb {
+  background-color: #9394a5;
+  border-radius: 5px;
+}
+
+.container-holder .contact-container::-webkit-scrollbar-thumb:hover {
+  background-color: #d2d3db;
+}
+
+/* dark mode */
+.dark-mode .container-holder .contact-container::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+.dark-mode .container-holder .contact-container::-webkit-scrollbar-thumb {
+  background-color: #535353;
+}
+
+.dark-mode .container-holder .contact-container::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3;
+}
+
+
 .input-box:hover {
   box-shadow: 0 0 15px #7877e6;
 }
@@ -51,7 +84,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 5%;
   position: relative;
 }
 
@@ -607,11 +640,15 @@ nav li a:hover {
       width: 30vw;
       max-width: 400px;
       min-width: 300px;
-      height: auto;
+      }
+
+      .resume-pic {
+        height: 75vh;
       }
 
       .profile-pic {
         border-radius: 50%;
+        height: 50vh;
       }
 
       .header {
@@ -637,7 +674,7 @@ nav li a:hover {
 
       .profile-pic, .resume-pic {
           width: 60vw;
-          max-width: 400px;
+          max-width: 350px;
       }
 
       .header {

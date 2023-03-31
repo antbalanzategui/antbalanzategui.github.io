@@ -978,3 +978,7 @@ margin-left: 25%;
 
 }
 
+.successHolder {
+  text-align: center;
+  height: 100vh;
+}

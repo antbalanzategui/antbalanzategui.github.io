@@ -42,6 +42,7 @@ input::-webkit-contacts-auto-fill-button {
   padding: 20px 60px 30px 40px;
   box-shadow: 0 0 15px 	#7877e6;
   overflow: auto;
+  padding-top: 2%;
 }
 .container-holder .contact-container::-webkit-scrollbar, #success-message::-webkit-scrollbar {
   width: 10px;
@@ -779,7 +780,7 @@ margin-left: 0px;
 padding: 0;
 }
 .right-side .button {
-margin-left: 25%;
+margin-left: 23%;
 }
 }
 }

@@ -7,14 +7,14 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px  #F0F1F8 inset;
+    -webkit-box-shadow: 0 0 0 60px  #F0F1F8 inset;
     -webkit-text-fill-color: #333 !important;
 }
 .dark-mode input:-webkit-autofill,
 .dark-mode input:-webkit-autofill:hover,
 .dark-mode input:-webkit-autofill:focus,
 .dark-mode input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #212121 inset;
+    -webkit-box-shadow: 0 0 0 60px #212121 inset;
     -webkit-text-fill-color: #b3b3b3 !important;
 }
 input::-webkit-contacts-auto-fill-button {
@@ -176,6 +176,7 @@ input::-webkit-contacts-auto-fill-button {
 .right-side .message-box{
   min-height: 110px;
 }
+
 .right-side .button{
   display: inline-block;
   margin-top: 12px;
@@ -853,7 +854,7 @@ margin-left: 23%;
 }
 
 @media screen and (min-width: 1600px) {
-  .contact-container {
+   .contact-container {
     padding-top: 5%;
   }
 }

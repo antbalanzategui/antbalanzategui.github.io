@@ -859,6 +859,9 @@ margin-left: 25%;
     height: 75vh;
     min-height: 300px;
   }
+  .profile-pic, .resume-pic {
+    min-height: 350px;
+  }
 }
 
 #success-message {

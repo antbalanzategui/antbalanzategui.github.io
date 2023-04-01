@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px  #F0F1F8 inset;
+    -webkit-text-fill-color: #333 !important;
+}
+
+/* Dark mode styling */
+.dark-mode input:-webkit-autofill,
+.dark-mode input:-webkit-autofill:hover,
+.dark-mode input:-webkit-autofill:focus,
+.dark-mode input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #212121 inset;
+    -webkit-text-fill-color: #b3b3b3 !important;
+}
+
+
+/* Style the autocomplete suggestion drop-down button */
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
 
 .container-holder {
   min-height: 100vh;

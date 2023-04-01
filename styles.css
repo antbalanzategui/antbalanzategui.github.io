@@ -852,6 +852,12 @@ margin-left: 23%;
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .contact-container {
+    padding-top: 5%;
+  }
+}
+
 @media screen and (max-height: 500px) {
   #projects {
     height: auto;

@@ -11,7 +11,7 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #333 !important;
 }
 
-/* Dark mode styling */
+
 .dark-mode input:-webkit-autofill,
 .dark-mode input:-webkit-autofill:hover,
 .dark-mode input:-webkit-autofill:focus,
@@ -21,7 +21,7 @@ input:-webkit-autofill:active {
 }
 
 
-/* Style the autocomplete suggestion drop-down button */
+
 input::-webkit-contacts-auto-fill-button {
     visibility: hidden;
     pointer-events: none;
@@ -68,7 +68,7 @@ input::-webkit-contacts-auto-fill-button {
   background-color: #d2d3db;
 }
 
-/* dark mode */
+
 .dark-mode .container-holder .contact-container::-webkit-scrollbar-track, .dark-mode #success-message::-webkit-scrollbar-track {
   background-color: #121212;
 }
@@ -98,7 +98,7 @@ input::-webkit-contacts-auto-fill-button {
   background-color: #d2d3db;
 }
 
-/* dark mode */
+
 .dark-mode .project-back::-webkit-scrollbar-track {
   background-color: #121212;
 }
@@ -760,12 +760,12 @@ footer {
 
   @media only screen and (max-width: 600px) {
   footer {
-  /* change height */
+
   height: 20vh;
   }
 
   footer ul {
-      /* change to column layout */
+
       flex-direction: column;
       justify-content: space-evenly;
       height: 100%;
@@ -781,7 +781,7 @@ footer {
 
   .resume-pic, .profile-pic {
     max-width: 350px;
-    /* I AM HERE */
+
   }
 
   .profile, .resume {
@@ -1019,7 +1019,7 @@ margin-left: 25%;
 }
 
 .rainHolder {
-  height: 90vh; /* adjust height as needed */
+  height: 90vh; 
   position: relative;
   overflow: hidden;
 }
@@ -1032,7 +1032,7 @@ margin-left: 25%;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1; /* set the z-index to be behind other elements */
+  z-index: -1; 
 }
 
 .rain.back-row {

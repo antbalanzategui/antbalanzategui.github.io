@@ -51,33 +51,33 @@ input::-webkit-contacts-auto-fill-button {
   overflow: auto;
 }
 
-.container-holder .contact-container::-webkit-scrollbar {
+.container-holder .contact-container::-webkit-scrollbar, #success-message::-webkit-scrollbar {
   width: 10px;
 }
 
-.container-holder .contact-container::-webkit-scrollbar-track {
+.container-holder .contact-container::-webkit-scrollbar-track, #success-message::-webkit-scrollbar-track {
   background-color: #484b6a;
 }
 
-.container-holder .contact-container::-webkit-scrollbar-thumb {
+.container-holder .contact-container::-webkit-scrollbar-thumb, #success-message::-webkit-scrollbar-thumb {
   background-color: #9394a5;
   border-radius: 5px;
 }
 
-.container-holder .contact-container::-webkit-scrollbar-thumb:hover {
+.container-holder .contact-container::-webkit-scrollbar-thumb:hover, #success-message::-webkit-scrollbar-thumb:hover {
   background-color: #d2d3db;
 }
 
 /* dark mode */
-.dark-mode .container-holder .contact-container::-webkit-scrollbar-track {
+.dark-mode .container-holder .contact-container::-webkit-scrollbar-track, .dark-mode #success-message::-webkit-scrollbar-track {
   background-color: #121212;
 }
 
-.dark-mode .container-holder .contact-container::-webkit-scrollbar-thumb {
+.dark-mode .container-holder .contact-container::-webkit-scrollbar-thumb, .dark-mode #success-message::-webkit-scrollbar-thumb {
   background-color: #535353;
 }
 
-.dark-mode .container-holder .contact-container::-webkit-scrollbar-thumb:hover {
+.dark-mode .container-holder .contact-container::-webkit-scrollbar-thumb:hover, .dark-mode #success-message::-webkit-scrollbar-thumb:hover {
   background-color: #b3b3b3;
 }
 
@@ -430,7 +430,7 @@ body {
   border-color: #9394a5;
 }
 
-.container, .grid-container, .container-holder  {
+.container, .grid-container, .container-holder, #success-message  {
   border: solid;
   border-color: #9394a5;
   border-right: 0px;
@@ -558,7 +558,7 @@ a:hover {
   color: #ffdef2;
 }
 
-.dark-mode .container, .dark-mode .grid-container, .dark-mode .container-holder {
+.dark-mode .container, .dark-mode .grid-container, .dark-mode .container-holder, .dark-mode #success-message {
   border: solid;
   border-color: #535353;
   border-right: 0px;
@@ -1003,7 +1003,136 @@ margin-left: 25%;
 
 }
 
-.successHolder {
-  text-align: center;
+#successNav {
+  margin-top: -2vh;
+}
+
+#success-message {
   height: 100vh;
+  text-align: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+#success-message h1 {
+  font-size: calc(2.5vw + 2.5vh);
+}
+
+#success-message p {
+  font-size: calc(2vw + 2vh);
+}
+
+.rainHolder {
+  height: 90vh; /* adjust height as needed */
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px; /* add negative margin */
+}
+
+.rain {
+  position: absolute;
+  top: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* set the z-index to be behind other elements */
+}
+
+.rain.back-row {
+  display: none;
+  z-index: 1;
+  bottom: 50px;
+  opacity: 0.5;
+}
+
+body.back-row-toggle .rain.back-row {
+  display: block;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
+}
+
+.stem {
+  width: 1px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom,#7877e6,#7877e6);
+  animation: stem 0.5s linear infinite;
+}
+
+.dark-mode .stem {
+  background: linear-gradient(to bottom, #ffdef2, #ffdef2)
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 15px;
+  height: 10px;
+  border-top: 5px dotted #7877e6;
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
+}
+
+.dark-mode .splat {
+  border-top: 5px dotted #ffdef2;
+}
+
+body.splat-toggle .splat {
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
 }

@@ -430,7 +430,7 @@ body {
   border-color: #9394a5;
 }
 
-.container, .grid-container, .container-holder, #success-message  {
+.container, .grid-container, .container-holder, #success-message, .rainHolder {
   border: solid;
   border-color: #9394a5;
   border-right: 0px;
@@ -558,7 +558,7 @@ a:hover {
   color: #ffdef2;
 }
 
-.dark-mode .container, .dark-mode .grid-container, .dark-mode .container-holder, .dark-mode #success-message {
+.dark-mode .container, .dark-mode .grid-container, .dark-mode .container-holder, .dark-mode #success-message, .dark-mode .rainHolder {
   border: solid;
   border-color: #535353;
   border-right: 0px;
@@ -1003,10 +1003,6 @@ margin-left: 25%;
 
 }
 
-#successNav {
-  margin-top: -2vh;
-}
-
 #success-message {
   height: 100vh;
   text-align: center;
@@ -1026,7 +1022,6 @@ margin-left: 25%;
   height: 90vh; /* adjust height as needed */
   position: relative;
   overflow: hidden;
-  margin-bottom: 60px; /* add negative margin */
 }
 
 .rain {

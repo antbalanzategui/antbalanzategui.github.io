@@ -45,7 +45,7 @@ themeToggle.addEventListener('change', () => {
       document.getElementById('pImage2').src = './utils/lightMode/project4.png';
       document.getElementById('pImage3').src = './utils/lightMode/socialMediaVisual.png';
       document.getElementById('pImage4').src = './utils/lightMode/passwordSecurity.png';
-      document.getElementById('pImage5').src = './utils/lightMode/reactBoxLightMode.png';
+      document.getElementById('pImage5').src = './utils/lightMode/reactboxLightMode.png';
       document.getElementById('pImage6').src = './utils/lightMode/lightModeD3JS.png';
     }
   }

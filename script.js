@@ -30,7 +30,7 @@ themeToggle.addEventListener('change', () => {
     localStorage.setItem('theme', 'dark');
     if (window.location.href.includes("projects.html")) {
       document.getElementById('pImage1').src = './utils/darkMode/darkModeTOH.png';
-      document.getElementById('pImage2').src = './utils/darkMode/darkModep4.png';
+      document.getElementById('pImage2').src = './utils/darkMode/darkModeIsotherm.png';
       document.getElementById('pImage3').src = './utils/darkMode/darkModeSMV - Copy.png'
       document.getElementById('pImage4').src = './utils/darkMode/darkModePS.png';
       document.getElementById('pImage5').src = './utils/darkMode/reactBoxSelect.png';
@@ -42,7 +42,7 @@ themeToggle.addEventListener('change', () => {
     localStorage.setItem('theme', 'light');
     if (window.location.href.includes("projects.html")) {
       document.getElementById('pImage1').src = './utils/lightMode/towerofhanoi.png';
-      document.getElementById('pImage2').src = './utils/lightMode/project4.png';
+      document.getElementById('pImage2').src = './utils/lightMode/isothermPlot.png';
       document.getElementById('pImage3').src = './utils/lightMode/socialMediaVisual.png';
       document.getElementById('pImage4').src = './utils/lightMode/passwordSecurity.png';
       document.getElementById('pImage5').src = './utils/lightMode/reactboxLightMode.png';
@@ -56,7 +56,7 @@ if (localStorage.getItem('theme') === 'dark') {
     themeToggle.checked = true;
     if (window.location.href.includes("projects.html")) { 
       document.getElementById('pImage1').src = './utils/darkMode/darkModeTOH.png';
-      document.getElementById('pImage2').src = './utils/darkMode/darkModep4.png';
+      document.getElementById('pImage2').src = './utils/darkMode/darkModeIsotherm.png';
       document.getElementById('pImage3').src = './utils/darkMode/darkModeSMV - Copy.png'
       document.getElementById('pImage4').src = './utils/darkMode/darkModePS.png';
       document.getElementById('pImage5').src = './utils/darkMode/reactBoxSelect.png';
@@ -68,7 +68,7 @@ if (localStorage.getItem('theme') === 'dark') {
     themeToggle.checked = false;
     if (window.location.href.includes("projects.html")) {
       document.getElementById('pImage1').src = './utils/lightMode/towerofhanoi.png';
-      document.getElementById('pImage2').src = './utils/lightMode/project4.png';
+      document.getElementById('pImage2').src = './utils/lightMode/isothermPlot.png';
       document.getElementById('pImage3').src = './utils/lightMode/socialMediaVisual.png';
       document.getElementById('pImage4').src = './utils/lightMode/passwordSecurity.png';
       document.getElementById('pImage6').src = './utils/lightMode/lightModeD3JS.png';

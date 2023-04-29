@@ -36,6 +36,9 @@ themeToggle.addEventListener('change', () => {
       document.getElementById('pImage5').src = './utils/darkMode/reactBoxSelect.png';
       document.getElementById('pImage6').src = './utils/darkMode/d3js.png';
     }
+    else if(window.location.href.includes("about.html")) {
+      document.getElementById('resumePicture').src = './utils/darkMode/darkModeResume.png'
+    }
 
   } else {
     body.classList.remove('dark-mode');
@@ -47,6 +50,9 @@ themeToggle.addEventListener('change', () => {
       document.getElementById('pImage4').src = './utils/lightMode/passwordSecurity.png';
       document.getElementById('pImage5').src = './utils/lightMode/reactboxLightMode.png';
       document.getElementById('pImage6').src = './utils/lightMode/lightModeD3JS.png';
+    }
+    else if(window.location.href.includes("about.html")) {
+      document.getElementById('resumePicture').src = './utils/lightMode/antonioBalanzateguiCurrentResume-1.png'
     }
   }
 });
@@ -62,6 +68,9 @@ if (localStorage.getItem('theme') === 'dark') {
       document.getElementById('pImage5').src = './utils/darkMode/reactBoxSelect.png';
       document.getElementById('pImage6').src = './utils/darkMode/d3js.png';
     }
+    else if(window.location.href.includes("about.html")) {
+      document.getElementById('resumePicture').src = './utils/darkMode/darkModeResume.png'
+    }
 
   } else {
     body.classList.remove('dark-mode');
@@ -72,6 +81,9 @@ if (localStorage.getItem('theme') === 'dark') {
       document.getElementById('pImage3').src = './utils/lightMode/socialMediaVisual.png';
       document.getElementById('pImage4').src = './utils/lightMode/passwordSecurity.png';
       document.getElementById('pImage6').src = './utils/lightMode/lightModeD3JS.png';
+    }
+    else if(window.location.href.includes("about.html")) {
+      document.getElementById('resumePicture').src = './utils/lightMode/antonioBalanzateguiCurrentResume-1.png'
     }
   }
   var rain = function() {
